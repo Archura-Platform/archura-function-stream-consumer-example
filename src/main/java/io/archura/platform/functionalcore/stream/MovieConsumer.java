@@ -4,12 +4,10 @@ import io.archura.platform.api.context.Context;
 import io.archura.platform.api.logger.Logger;
 import io.archura.platform.api.type.Configurable;
 import io.archura.platform.api.type.functionalcore.LightStreamConsumer;
-import org.springframework.stereotype.Component;
 
 import java.util.Map;
 
-@Component
-public class MovieConsumerLight implements LightStreamConsumer, Configurable {
+public class MovieConsumer implements LightStreamConsumer, Configurable {
 
     private Map<String, Object> configuration;
 

@@ -17,12 +17,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.7.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>io.archura</groupId>
             <artifactId>archura-platform-api</artifactId>
             <version>${archura-platform-api.version}</version>
@@ -66,7 +60,7 @@
                             <transformers>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>io.archura.platform.functionalcore.stream.MovieConsumerLight</mainClass>
+                                    <mainClass>io.archura.platform.functionalcore.stream.MovieConsumer</mainClass>
                                 </transformer>
                             </transformers>
                             <finalName>io.archura.platform.functionalcore.stream.MovieConsumer-0.0.1</finalName>
