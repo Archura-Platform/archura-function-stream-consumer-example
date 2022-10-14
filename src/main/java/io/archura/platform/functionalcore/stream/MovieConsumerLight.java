@@ -3,13 +3,13 @@ package io.archura.platform.functionalcore.stream;
 import io.archura.platform.api.context.Context;
 import io.archura.platform.api.logger.Logger;
 import io.archura.platform.api.type.Configurable;
-import io.archura.platform.api.type.functionalcore.StreamConsumer;
+import io.archura.platform.api.type.functionalcore.LightStreamConsumer;
 import org.springframework.stereotype.Component;
 
 import java.util.Map;
 
 @Component
-public class MovieConsumer implements StreamConsumer, Configurable {
+public class MovieConsumerLight implements LightStreamConsumer, Configurable {
 
     private Map<String, Object> configuration;
 
